@@ -1,2 +1,2 @@
 # CursoQI-ExerciciosJava
- Material da linguagem **Java**
+ Material da linguagem **Java**.
