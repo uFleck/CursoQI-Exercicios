@@ -44,11 +44,20 @@ public class Numero {
     public int verPares(){
         int i = 1;
         int n = 0;
-        while(i <= numero){
-            if(i % 2 == 0){
-                n++;
+        if(numero > 0){
+            while(i <= numero){
+                if(i % 2 == 0){
+                    n++;
+                }
+                i++;
             }
-            i++;
+        } else if(numero < 0){
+            while(i >= numero){
+                if(i % 2 == 0){
+                    n++;
+                }
+                i--;
+            }
         }
         return n;
     }
@@ -56,11 +65,20 @@ public class Numero {
     public int verImpares(){
         int i = 1;
         int n = 0;
-        while(i <= numero){
-            if(i % 2 == 1){
-                n++;
+        if(numero > 0){
+            while(i <= numero){
+                if(i % 2 == 1){
+                    n++;
+                }
+                i++;
             }
-            i++;
+        } else if(numero < 0){
+            while(i >= numero){
+                if(i % 2 == 1){
+                    n++;
+                }
+                i--;
+            }
         }
         return n;
     }
