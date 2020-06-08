@@ -163,11 +163,11 @@ public class Funcionario {
     }
     
     public double calcularExtra50 (){
-        return ((valorHora * horasExtras50) * 1.5) - (quantHoras * 1.5);
+        return ((valorHora * horasExtras50) * 1.5);
     }
     
     public double calcularExtra100 (){
-        return ((valorHora * horasExtras100) * 2) - (quantHoras * 2);
+        return ((valorHora * horasExtras100) * 2);
     }
     
     public double calcularTotalExtra(){

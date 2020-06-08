@@ -15,7 +15,6 @@ public class Main {
         
         byte voltar = 1;
         boolean conf = false;
-        double valorTransporteMensal = 0;
         do{
             System.out.println("\n1 - Cadastrar dados                    2 - Ver Dados Cadastrados"
                               + "\n3 - Ver Sálario Bruto                  4 - Ver Sálario Família"
@@ -101,7 +100,7 @@ public class Main {
                     byte voltar5 = 2;
                     do{
                         System.out.println("Digite o total gasto com o vale transporte mensalmente:");
-                        valorTransporteMensal = in.nextDouble();
+                        double valorTransporteMensal = in.nextDouble();
                         System.out.println("******************************");
                         System.out.println("Valor do vale transporte: " + df.format(f1.calcularValeTransporte(valorTransporteMensal)));
                         System.out.println("******************************");
@@ -136,7 +135,9 @@ public class Main {
                     byte voltar8 = 2;
                     do{
                         System.out.println("******************************");
-                        System.out.println("Vale refeição: " + df.format(f1.calcularValeRefeicao(valorTransporteMensal)));
+                        System.out.println("Digite o valor gasto mensalmente com refeição:");
+                        double valorVale = in.nextDouble();
+                        System.out.println("Vale refeição: " + df.format(f1.calcularValeRefeicao(valorVale)));
                         System.out.println("******************************");
                         System.out.println("Voltar? \n1 - Claro!        2 - Não!");
                         voltar8 = in.nextByte();
