@@ -67,7 +67,7 @@ public class Main {
                         System.out.println("\nDigite o código do contato que você quer excluir:");
                         int codigo = in.nextInt();
 
-                        Contato encontrado = c1.pesquisarContato(codigo);
+                        Contato encontrado = c1.pesquisarContatoCodigo(codigo);
                         if(encontrado == null){
                             System.out.println("Nenhum contato foi encontrado.");
                         } else{
@@ -91,7 +91,7 @@ public class Main {
                     } else{
                         System.out.println("\nDigite o telefone celular do contato para pesquisarmos:");
                         int telCelular = in.nextInt();
-                        Contato achei = c1.pesquisarContato(telCelular);
+                        Contato achei = c1.pesquisarContatoCelular(telCelular);
                         if(achei == null){
                             System.out.println("Nenhum contato foi encontrado!");
                         } else{

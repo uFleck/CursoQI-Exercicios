@@ -34,9 +34,19 @@ public class Cadastro {
         return this.lista.size();
     }
     
-    public Contato pesquisarContato(int telCelular){
+    int tamanhoLista = this.lista.size();
+    public Contato pesquisarContatoCodigo(int codigo){
         Contato achei = null;
-        int tamanhoLista = this.lista.size();
+        for(int i = 0; i < tamanhoLista; i++){
+            if(this.lista.get(i).getCodigo() == codigo){
+                achei = this.lista.get(i);
+            }
+        }
+        return achei;
+    }
+    
+    public Contato pesquisarContatoCelular(int telCelular){
+        Contato achei = null;
         for(int i = 0; i < tamanhoLista; i++){
             if(this.lista.get(i).getTelCelular() == telCelular){
                 achei = this.lista.get(i);
