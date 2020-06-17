@@ -17,9 +17,7 @@ div{
     width: auto;
     margin: 20px auto 20px auto;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.336);
-    border-style: solid;
-    border-width: thin;
-    border-color: black;
+    border: 2px thin black;
 }
 
 #txtNome{
