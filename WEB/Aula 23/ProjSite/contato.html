@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Koster">
+    <meta name="description" content="Agência de viagem - Koster. Viagens nacionais e internacionais">
+    <meta name="keywords" content="Koster, Turismo, Viagens, Cidades, Nacionais, Internacionais">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>
+        Agência de Viagens - Koster. Conhecendo o Mundo!
+    </title>
+</head>
+<body>
+    <div class="geral">
+        <header class="topo">
+            
+        </header>
+        <nav class="cssmenu">
+            <ul>
+                <li><a href="index.html">Empresa</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <section class="conteudo">
+            <form action="#" method="post" name="form1">
+                <fieldset>
+                    <legend> Dados Pessoais</legend>
+                    <label>Nome:</label>
+                    <input type="text" name="txtnome" size="40" placeholder="Digite seu nome">
+                    <br>
+                    <label>Data de Nascimento:</label>
+                    <input type="date" name="nascimento">
+                    <br>
+                    <label>E-mail:</label>
+                    <input type="email" name="email" size="40">
+                    <br>
+                    <label>Senha:</label>
+                    <input type="password" name="senha" size="10">
+                    <br>
+                    <label>Estado:</label>
+                    <select name="estado">
+                        <option value="vazio">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                    <br>
+                    <label>Sexo:</label> <br>
+                    <input type="radio" name="sexo" value="f">Feminino <br>
+                    <input type="radio" name="sexo" value="m">Masculino <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados Acadêmicos</legend>
+                    <label>Escolaridade:</label> <br>
+                    <select name="escolaridade" size="3">
+                        <option value="fundamental">Ensino Fundamental</option>
+                        <option value="medio">Ensino Médio</option>
+                        <option value="tecnico">Ensino Técnico</option>
+                        <option value="graduacao">Graduação</option>
+                        <option value="pos">Pós Graduação</option>
+                    </select>
+                    <br>
+                    <label>Cursos:</label> <br>
+                    <textarea name="cursos" cols="30" rows="6" placeholder="Digite os cursos aqui!"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados Profissionais</legend>
+                    <label>Anexe seu currículo aqui:</label>
+                    <input type="file" name="curriculo">
+                </fieldset>
+                <input type="submit" name="envia" value="Enviar">
+                <input type="reset" name="limpa" value="Limpar">
+            </form>
+        </section>
+        <footer class="rodape">
+            <address>agenciakoster@agenciakoster.com</address>
+        </footer>
+    </div>
+</body>
+</html>

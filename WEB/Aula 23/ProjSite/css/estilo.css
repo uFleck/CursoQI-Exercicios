@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../img/fundo.jpg);
+    background-attachment: fixed;
+}
+
+.geral{
+    width: 960px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border: 4px solid black;
+    box-shadow: 3px 3px 3px black;
+}
+
+.topo{
+    height: 300px;
+    background-image: url(../img/header.jpg);
+}
+
+.conteudo{
+    margin: 0;
+    width: auto;
+}
+
+.colunas{
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: gray solid 2px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -webkit-column-rule: gray solid 2px;
+    padding: 10px;
+}
+
+.colunas p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    color: #1f93ff;
+}
+
+.rodape{
+    background-color: #1f93ff;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cssmenu{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    background: #1f93ff;
+}
+
+.cssmenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 1;
+    text-align: center;
+}
+
+.cssmenu ul li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.cssmenu ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.cssmenu ul li a:hover{
+    background-color: #62b3ff;
+}
+
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset{
+    border-radius: 20px;
+    border: 2px solid gray;
+}
+
+input, select, textarea{
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+}
+
+input:focus, select:focus, textarea:focus{
+    background-color: #62b3ff;
+}
+
+input:hover, select:hover, textarea:hover{
+    border-color: #62b3ff;
+}
