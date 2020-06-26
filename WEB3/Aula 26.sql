@@ -17,7 +17,7 @@ CREATE TABLE cargos(
 CREATE TABLE funcionario(
 	idfuncionario INT NOT NULL AUTO_INCREMENT,
 	nome VARCHAR(60) NOT NULL,
-    cpf CHAR(11) NOT NULL,
+    cpf CHAR(11) NOT NULL UNIQUE,
     idcargos INT NOT NULL, 
     valorHora INT NOT NULL,
     quantidadeHoras INT NOT NULL,
