@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br"/>
+    <head>
+        <title>Folha de Pagamentos</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="_css/bootstrap.min.css"/>
+        <style>
+            .form-group{
+                width: 400px;
+                margin: 0 auto;
+            }
+            
+            label, legend{
+                font-weight: bold
+            }
+            
+            input:hover, select:hover{
+                background-color: lightgray;
+                border: 1px solid black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <section class="container mt-3">
+            <form action="resFolha.jsp" method="POST">
+                <fieldset>
+                    <legend class="text-center">Preencha o formulário</legend>
+                    <div class="form-group">
+                        <label for="inome">Nome</label>
+                        <input type="text" class="form-control" name="nome" id="inome" maxlength="60"/>
+
+                        <label for="icpf">CPF</label>
+                        <input type="text" class="form-control" name="cpf" id="icpf" maxlength="11"/>
+
+                        <label for="icargo">Cargo</label>
+                        <input type="text" class="form-control" name="cargo" id="icargo"/>
+
+                        <label for="itotalh">Total ganho por hora</label>
+                        <input type="number" class="form-control" name="valorHora" id="itotalh"/>
+
+                        <label for="itotalht">Total de Horas Trabalhadas</label>
+                        <input type="number" class="form-control" name="quantHoras" id="itotalht"/>
+
+                        <label for="ihorasx50">Horas Extras em dias úteis</label>
+                        <input type="number" class="form-control" name="horasExtras50" id="ihorasx50"/>
+
+                        <label for="ihorasx100">Total de horas em feriados</label>
+                        <input type="number" class="form-control" name="horasExtras100" id="ihorasx100"/>
+
+                        <label for="idep">Total de dependentes</label>
+                        <input type="number" class="form-control" name="dependentes" id="idep" max="30"/>
+
+                        <label for="itins">Tipo de insalubridade</label>
+                        <select class="form-control" id="itins" name="tipoInsalubre">
+                            <option value="1">Sem insalubridade</option>
+                            <option value="2">40% Grau Máximo</option>
+                            <option value="3">20% Grau Médio</option>
+                            <option value="4">10% Grau Mínimo</option>
+                        </select>
+                        
+                        <label for="itrans">Valor total do Vale Transporte</label>
+                        <input type="number" id="itrans" name="valorTransporteMensal" class="form-control">
+                        
+                        <label for="ivale">Valor total da Refeição</label>
+                        <input type="number" id="ivale" name="valorVale" class="form-control">
+                        
+                        <input type="submit" class="btn btn-dark w-100 h-50 mt-3" name="send" value="Enviar"/>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
