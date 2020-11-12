@@ -1,3 +1,3 @@
-# CursoQI WEB
+# QICourse WEB
 
-Exercícios voltados à web realizados por mim durante o curso na QI.
+Web-based exercises performed by me during the IQ course.
