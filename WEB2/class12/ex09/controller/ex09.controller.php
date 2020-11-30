@@ -12,6 +12,6 @@
 	$ex09->setGrade(6, 1);
 	$ex09->setGrade(4, 2);
 
-	//Sora eu acho que to ficando louco... pelo menos me diverti fazendo um negócio desse
-
-	echo "Weighted Average: {$ex09->calculateWeightedAverage()}";
+	echo
+	    "Name: {$ex09->getName()}<br>".
+	    "Weighted Average: {$ex09->calculateWeightedAverage()}";
