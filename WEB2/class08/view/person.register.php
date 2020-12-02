@@ -16,7 +16,7 @@
 
 		<form action="../controller/person.controller.php" method="post">
 			<input type="text" name="txtnome" placeholder="Type your name">
-			<input type="number" name="txtidade" placeholder="Type your age">
+			<input type="number" name="txtage" placeholder="Type your age">
 			<input type="submit" class="btn btn-success" value="Register Student">
 			<input type="reset" class="btn btn-warning" value="Clear Data">
 		</form>
