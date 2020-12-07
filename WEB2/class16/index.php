@@ -1,7 +1,7 @@
 <?php
 
     
-    $name = array('Luiz', 'Gustavo');
+    $name = array('Bruno', 'Koster');
     echo "<br>Name: ".$name[0];
     echo "<br>Name: ".$name[1];
 
