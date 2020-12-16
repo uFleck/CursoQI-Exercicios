@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Layout with buttons
+	</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/icon.png">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<main id="general">
+		<header id="top">
+			<h1>BANNER HERE</h1>
+		</header>
+		<nav id="menu">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#whoweare">Who we are</a></li>
+				<li><a href="#galery">Galery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<section id="home">
+			<h2> Home here </h2>
+		</section>
+
+		<section id="whoweare">
+			<h2> Who we are </h2>
+		</section>
+
+		<section id="galery">
+			<h2> Galery here </h2>
+		</section>
+
+		<section id="contact">
+			<h2> Contact here </h2>
+
+			<form method="post">
+				<input type="text" name="inputname" required autofocus>
+				<input type="number" name="inputage">
+
+				<fieldset>
+					<legend>Select your course</legend>
+					<label><input type="radio" name="inputcourse" value="ti" checked>Computer Technician</label>
+					<label><input type="radio" name="inputhr" value="hr" checked>Human Resources Technician</label>
+					<label><input type="radio" name="inputadm" value="ti" checked>Administration Technician</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Select your shift of interest</legend>
+					<label><input type="checkbox" name="morning" id="morning">Morning</label>
+					<label><input type="checkbox" name="afternoon" id="afternoon">Afternoon</label>
+					<label><input type="checkbox" name="night" id="night">Night</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Actions</legend>
+					<input type="submit" name="inputregister" value="Register">
+				</fieldset>
+			</form>
+		</section>
+
+		<footer>
+			<h3> Footer here </h3>
+		</footer>
+	</main>
+</body>
+</html>
