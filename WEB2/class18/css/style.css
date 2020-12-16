@@ -1,0 +1,17 @@
+#title1 {
+	color: crimson;
+	text-align: center;
+}
+
+ul.square {
+	list-style-type: square;
+}
+
+ol.letters {
+	list-style-type: lower-alpha;
+}
+
+.menu ul li {
+	list-style-type: none;
+	display: inline-block;
+}
