@@ -1,0 +1,14 @@
+{
+    "name": "bruno_koster/class21",
+    "description": "Review",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno Koster",
+            "email": "bruno10762@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

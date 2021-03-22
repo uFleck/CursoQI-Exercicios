@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Fleck's Delivery</title>
+	</head>
+	<body>
+        <h1>Fleck's Delivery</h1>
+        <fieldset>
+            <legend>Make your request.</legend>
+            <form action="./controller/delivery.controller.php" method="post">
+                <fieldset>
+                    <legend>Fill in the fields below:</legend>
+
+                    <label>Name: <input type="text" name="inputname" required>*</label>
+                    <label>E-mail: <input type="email" name="inputemail" required>*</label>
+                    <label>Phone: <input type="number" name="inputphone" required>*</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Select your snack:</legend>
+
+                    <select name="inputsnack" id="snack">
+                        <option value="Hot Dog">Hot Dog</option>
+                        <option value="Pressed">Pressed</option>
+                        <option value="French Fries">French Fries</option>
+                        <option value="Pizza">Pizza</option>
+                    </select>
+                    <label>Amount: <input type="number" name="inputsnackamount" required>*</label>				
+                </fieldset>			
+                
+                <fieldset>
+                    <legend>Select your drink:</legend>
+
+                    <select name="inputdrink" id="drink">
+                        <option value="Soda">Soda</option>
+                        <option value="H2O">H2O</option>
+                        <option value="Water">Water</option>
+                    </select>
+                    <label>Amount: <input type="number" name="inputdrinkamount" required>*</label>				
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose the payment form:</legend>
+                    
+                    <input type="radio" name="inputpaymentform" value="Visa" checked="checked">Visa
+                    <input type="radio" name="inputpaymentform" value="Mastercard">Mastercard
+                    <input type="radio" name="inputpaymentform" value="Elo">Elo
+                    <input type="radio" name="inputpaymentform" value="Others">Others
+
+                    <fieldset>
+                        <legend>Do you want delivery?</legend>
+                        
+                        <input type="radio" name="inputdelivery" value="Yes" checked="checked">Yes
+                        <input type="radio" name="inputdelivery" value="No">No
+                    </fieldset>
+                </fieldset>
+                
+                
+                <fieldset>
+                    <legend>Actions:</legend>
+
+                    <input type="submit" name="btnSubmit" value="Submit data">
+                    <input type="reset" name="btnReset" value="Reset data">
+                </fieldset>
+            </form>
+        </fieldset>
+	</body>
+</html>
