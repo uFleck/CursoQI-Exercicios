@@ -1,3 +1,3 @@
 # QICourse WEB
 
-Web-based exercises performed by me during the IQ course.
+Web-based exercises performed by me during the QIcourse.
