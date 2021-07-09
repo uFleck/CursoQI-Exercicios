@@ -1,0 +1,17 @@
+body {
+  color: white;
+  background-color: black;
+}
+address {
+  position: absolute;
+  bottom: 0;
+}
+
+#lista {
+  margin: 300px auto;
+  width: 50%;
+}
+
+#titulo {
+  text-align: center;
+}

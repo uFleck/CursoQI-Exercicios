@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+h1 {
+  padding-left: 10%;
+}
+
+table {
+  border: rgba(128, 128, 128, 0.603) 1px solid;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#head {
+  background-color: rgba(0, 255, 200, 0.24);
+}
+
+th, td {
+  border: grey 1px solid;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(129, 129, 129, 0.103);
+}
+
+tr:hover{
+	background-color: silver;
+}
