@@ -36,7 +36,9 @@ html, body {
 }
 
 #layout2 {
-  background-color: blue;
+  background: url(../img/genshin_impact_banner.png) no-repeat center;
+  background-size: cover;
+  font-size: 4vw;
 }
 
 /* layout1.html */
