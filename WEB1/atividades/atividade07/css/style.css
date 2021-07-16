@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* index.html */
+
+#index_main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#layout1, #layout2 {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+#layout1 {
+  background: url(../img/bleach_wallpaper.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 4vw;
+}
+
+#layout2 {
+  background-color: blue;
+}
+
+/* layout1.html */
+
+#l1_main {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bleach_wallpaper.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#l1_navbar {
+  height: 5%;
+}
+
+#l1_navbar ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#l1_navbar ul li{
+  width: 25%;
+  height: 100%;
+	display: flex;
+}
+
+#l1_navbar ul li a{
+  display: flex;
+	text-decoration: none;
+	color: #fff;
+  font-size: 1.5vw;
+	width: 100%;
+  height: 100%;
+	transition-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+}
+
+#l1_navbar ul li a:hover{
+	background-color: rgba(0, 0, 0, 0.37);
+}
+
+#l1_main section {
+  height: 95%;
+  position: relative;
+  top: 30%;
+  left: 16%;
+}
+
+#l1_main section p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(14, 205, 253);
+  font-size: 3vw;
+  width: fit-content;
+  padding: 1%;
+  border-radius: 2vh;
+  font-family: 'Dancing Script', cursive;
+}
+
+#l1_main footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* layout2.html */
+
+#l2_main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#nav {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  position: fixed;
+}
+
+#nav ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#nav ul li {
+  display: flex;
+  height: 5%;
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+}
+
+#nav ul li a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: solid rgba(255, 255, 255, 0) 1px;
+  font-size: 1.5vw;
+}
+
+#logo {
+  width: 100%;
+  height: 15%;
+  background-image: url(../img/Genshin_Impact_logo_icon.svg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#nav ul li a:hover {
+  border-bottom: solid white 1px;
+  transition-duration: 0.5s;
+}
+
+#nav ul li a:visited {
+  color: white;
+}
+
+#content {
+  display: block;
+  width: 80%;
+  margin-left: 20%;
+  height: 100%;
+}
+
+#content section {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(122, 122, 122);
+}
+
+#l2_main footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
