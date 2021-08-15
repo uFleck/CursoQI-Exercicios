@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - JavaScript - Aprendendo a Linguagem de Programação Web </title>
+    <meta name="author" content="BrunoKoster::bruno10762@gmail.com">
+    <script type="text/javascript">
+      //Comentando uma linha:
+      /*
+        Aqui comentário de bloco.
+        Mais de linha.
+      */
+      //Primeiro exemplo - uso de função nativa:
+      window.alert('Olá Mundo!');
+      //Segundo exemplo - uso de função no body:
+      window.document.write('<h1>Olá!</h1>');
+      //Terceiro exemplo - uso de propriedade:
+      //window.document.bgColor = 'red';
+      //Quarto exemplo - criando função:
+      function alterarCores(){
+        window.document.bgColor = '#000';
+        window.document.fgColor = '#fff';
+      }
+
+      //Criando espaço na memória - variáveis ou constantes:
+      var nome;
+      var idade;
+      nome = 'Borigodolfa';
+      idade = 20;
+      window.alert('Nome: '+nome+ '\nIdade: ' +idade);
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Exemplos de JS - JavaScript</h1>
+      <hr>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <hr>
+      <h2>Botão para Imprimir Página: </h2>
+      <input type="button" name="imprimir" value="Imprimir" onClick="window.print()">
+
+      <h2>Botão para Fechar a Janela: </h2>
+      <input type="button" name="fechar" value="Fechar" onClick="window.close()">
+
+      <h2>Botão que troca a cor do Fundo: </h2>
+      <input type="button" name="fundo" value="Alterar Cor do Fundo" onClick="window.document.bgColor='red'">
+
+      <h2>Botão que altera cor do fundo e texto: </h2>
+      <input type="button" name="alterapropriedades" value="Alterando Cores" onClick="alterarCores()">
+
+    </main>
+  </body>
+</html>
